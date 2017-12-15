@@ -1,0 +1,21 @@
+{% extends "ShopBundle::layout.html.twig" %}
+
+{% block body_map %}
+
+
+<h1>Map of shops</h1>
+    <div id="map"></div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArq7yenCMmQNQp3T2U51xbfmKBHxRhaLw">
+    </script>
+    <script src="{{ asset('js/main.js')}}"></script>
+
+{% endblock %}
